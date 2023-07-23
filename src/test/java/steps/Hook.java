@@ -35,6 +35,7 @@ public class Hook extends BaseUtil{
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--headless");
+	chromeOptions.addArguments("--remote-allow-origins=*");
         base.Driver = new ChromeDriver(chromeOptions);
     }
 
