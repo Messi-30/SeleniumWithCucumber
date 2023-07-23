@@ -34,7 +34,7 @@ public class Hook extends BaseUtil{
         base.scenarioDef = base.features.createNode(scenario.getName());
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--headless");
+        //chromeOptions.addArguments("--headless");
 	chromeOptions.addArguments("--remote-allow-origins=*");
         base.Driver = new ChromeDriver(chromeOptions);
     }
